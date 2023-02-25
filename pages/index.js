@@ -18,9 +18,9 @@ export default function Home() {
           Editor & Animator
         </div> */}
         <div className="text-slate mt-5 text-md font-medium">
-          I&apos;m a designer specializing in designing (and occasionally
-          coding) exceptional digital experiences. Currently, I&apos;m focused
-          on building brands, visual identity at{' '}
+          I&apos;m a designer specialized in designing (and occasionally coding)
+          exceptional digital experiences. Currently, I&apos;m focused on
+          building brands, visual identity at{' '}
           <a
             className="text-green transition duration-500 ease-in-out"
             href={'https://www.spek.co.in/'}
@@ -31,9 +31,9 @@ export default function Home() {
           </a>
           .
         </div>
-        <div className="text-lightestslate mt-16 text-md font-medium">
-          Unfortunately, my site is under developement as of now but you can
-          still check out my Behance & GitHub
+        <div className="text-lightestslate mt-16 lg:mt-36 text-md font-medium text-center">
+          Unfortunately, my site is under development as of now but you can
+          still check out my work on Behance & GitHub
         </div>
         <div className="flex flex-row gap-10 text-green mt-6 justify-center">
           <Link
