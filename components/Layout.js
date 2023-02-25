@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
 
@@ -18,7 +19,14 @@ export default function Layout({ title, children }) {
       <header>
         <nav className="bg-navy text-green bg-slate-900">
           <div className="lg:max-w-7xl lg:mx-auto p-4 lg:text-lg md:text-lg lg:py-8 flex flex-row justify-between items-center">
-            <div>Logo</div>
+            <Link href={'/'} rel="noopener noreferrer">
+              <Image
+                src={'/next.svg'}
+                width={100}
+                height={100}
+                alt={'Logo'}
+              ></Image>
+            </Link>
             <Link
               className="text-bold hover:bg-green/10 transition duration-300 ease-in-out rounded-md text-green-300-500 border-green border px-4 py-2"
               rel="noopener noreferrer"
