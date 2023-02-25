@@ -8,9 +8,7 @@ export default function Layout({ title, children }) {
     <>
       <Head>
         <title>
-          {title
-            ? title + ' - Makki Mohammed Zaib Shaikh'
-            : 'Makki Mohammed Zaib Shaikh'}
+          {title ? title + ' - MMZS' : 'Makki Mohammed Zaib Shaikh'}
         </title>
         <meta name="description" content="Makki Mohammed Zaib Shaikh" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -28,7 +26,7 @@ export default function Layout({ title, children }) {
               ></Image>
             </Link>
             <Link
-              className="text-bold hover:bg-green/10 transition duration-300 ease-in-out rounded-md text-green-300-500 border-green border px-4 py-2"
+              className="text-bold hover:bg-green/10 transition duration-500 ease-in-out rounded-sm text-green-300-500 border-green border px-4 py-2"
               rel="noopener noreferrer"
               target={'_blank'}
               href={'/resume.pdf'}
@@ -43,10 +41,15 @@ export default function Layout({ title, children }) {
           {children}
         </div>
       </main>
-      <footer className="bg-navy text-lightslate p-4 lg:py-8">
-        <div className="text-center text-sm leading-6 lg:text-xl md:text-lg lg:max-w-7xl lg:mx-auto">
+      <footer className="bg-navy text-center text-lightslate hover:text-green transition duration-500 ease-in-out p-4 lg:py-8">
+        <Link
+          href={'https://github.com/zaibshaikh'}
+          rel="noopener noreferrer"
+          target={'_blank'}
+          className="text-sm leading-6 lg:text-xl md:text-lg lg:max-w-7xl lg:mx-auto"
+        >
           Designed & Build by Makki Mohammed Zaib Shaikh
-        </div>
+        </Link>
       </footer>
     </>
   );
