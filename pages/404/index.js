@@ -5,11 +5,11 @@ import React from 'react';
 export default function Home() {
   return (
     <Layout title="Site Under Development">
-      <div className="text-slate-200">
-        <div className="text-4xl pt-16">
-          <span className="text-blue-200">404:</span> Page Not Found
+      <div className="justify-center">
+        <div className="text-4xl pt-16 font-sfprobold text-lightestslate font-bold">
+          <span className="text-green">404:</span> Page Not Found
         </div>
-        <p className="font-light mt-8 text-lg leading-8">
+        <p className="font-sfmono mt-8 text-base lg:w-1/2 text-slate">
           The URL you have tried to visit no longer exists or has been moved.
           This is probably my fault, so{' '}
           <span className="font-medium">I&apos;m sorry!</span> I hope I can make
@@ -18,8 +18,9 @@ export default function Home() {
       </div>
       <div className="pt-10">
         <Link
+          className="text-green hover:bg-green/10 transition duration-500 ease-in-out rounded-sm text-sm font-sfmono text-green-300-500 border-green border px-4 py-4"
+          rel="noopener noreferrer"
           href={'/'}
-          className="bg-slate-300 hover:bg-slate-400 hover:shadow-md hover:bg-darkgrey/20 transition duration-300 ease-in-out px-8 py-4 mt-8"
         >
           Return to Homepage
         </Link>

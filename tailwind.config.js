@@ -21,6 +21,10 @@ module.exports = {
         green: '#64ffda',
       },
     },
+    fontFamily: {
+      sfmono: ['sf-mono', 'monospace'],
+      sfpro: ['SF-Pro', 'san-serif'],
+    },
   },
   plugins: [],
 };
