@@ -4,7 +4,7 @@ import React from 'react';
 
 export default function Home() {
   return (
-    <Layout title="Site Under Development">
+    <Layout title="404 Page not Found">
       <div className="justify-center">
         <div className="text-4xl pt-16 font-sfprobold text-lightestslate font-bold">
           <span className="text-green">404:</span> Page Not Found
